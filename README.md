@@ -1,6 +1,8 @@
 # vue_h5_vant
 
 ## Project setup
+- 作者 刘玉全 
+- 邮箱 1012654345@qq.com
 ```
 npm install
 ```
