@@ -12,14 +12,19 @@ Vue.use(VueRouter)
       redirect: 'index'
     },
     {
-      name: 'redirect',
+      name: 'index',
       path: '/index',
       component: () => import('@/views/index')
     },
     {
+      name: 'login',
+      path: '/login',
+      component: () => import('@/views/login')
+    },
+    {
       name: 'notFound',
       path: '*',
-      component: () => import('@/views/notFound')
+      component: () => import('@/views/NotFound')
     }
 ]
 
@@ -32,5 +37,4 @@ export  function resetRouter() {
   const newRouter = createRouter()
   router.matcher = newRouter.matcher // matcher =replace routes
 }
-
 export  default router
