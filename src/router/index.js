@@ -17,6 +17,11 @@ Vue.use(VueRouter)
       component: () => import('@/views/index')
     },
     {
+      name: 'index',
+      path: '/home',
+      component: () => import('@/views/home')
+    },
+    {
       name: 'login',
       path: '/login',
       component: () => import('@/views/login')

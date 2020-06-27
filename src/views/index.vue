@@ -21,6 +21,7 @@
             accept="image/*" />
         </van-col>
         <van-col  :span="24" class="item">
+          <van-button @click="$router.push('/home')" > daochu</van-button>
           <van-button @click="loginOut" > 退出登錄</van-button>
         </van-col>
       </van-row>
